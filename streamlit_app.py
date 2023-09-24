@@ -22,6 +22,15 @@ year = st.number_input("Год выпуска", min_value=1900, max_value=dateti
 
 maker = st.selectbox("Производитель", options=["jjjjjj", "gggg"], placeholder="Select contact method...")
 
+option = st.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"),
+    index=None,
+    placeholder="Select contact method...",
+)
+
+st.write('You selected:', option)
+
 
 # In[15]:
 
