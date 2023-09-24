@@ -18,6 +18,7 @@ st.title("Стоимость автомобиля")
 
 # In[13]: 
 
+
 maker = st.selectbox(label="Производитель: ",
                      options=tuple(sorted(df['make'].unique())),
                      index=None,
