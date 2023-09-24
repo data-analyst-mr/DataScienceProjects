@@ -20,16 +20,13 @@ st.title("Стоимость автомобиля")
 
 year = st.number_input("Год выпуска", min_value=1900, max_value=datetime.now().year)
 
-maker = st.selectbox("Производитель", options=["jjjjjj", "gggg"], placeholder="Select contact method...")
-
-option = st.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone"),
+maker = st.selectbox(
+    "Производитель",
+    ("jjjjjj", "gggg"),
     index=None,
-    placeholder="Select contact method...",
+    placeholder="Выберите производителя",
 )
 
-st.write('You selected:', option)
 
 
 # In[15]:
