@@ -47,15 +47,15 @@ try:
     today = datetime.today()
     week = today.isocalendar()[1]
 
-
     trim_name = st.selectbox(label="Модификация: ",
                     options=tuple(df['trim'].unique()),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
 
-    body = st.selectbox(label="Тип кузова: ",
-                    options=("jjjjjj", "gggg"),
+    df = df.loc[df['trim'] == trim_name]
+    body_name = st.selectbox(label="Тип кузова: ",
+                    options=tuple(df['body'].unique()),
                     index=None,
                     placeholder="Выберите тип кузова",
                    )
