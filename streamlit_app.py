@@ -76,8 +76,15 @@ odometer = st.number_input(label="Пробег (мили): ",
 condition = st.radio(label="Состояние автомобиля: ",
                      options=(1, 2, 3, 4, 5))
 
-interior = st.selectbox(label="Цвет интерьера: ",
+if condition == 1:
+    interior = st.selectbox(label="Цвет интерьера: ",
                         options=("jjjjjj", "gggg"),
+                        index=None,
+                        placeholder="Выберите цвет интерьера"
+                       )
+else:
+    interior = st.selectbox(label="Цвет интерьера: ",
+                        options=("hhh", "mmm"),
                         index=None,
                         placeholder="Выберите цвет интерьера"
                        )
