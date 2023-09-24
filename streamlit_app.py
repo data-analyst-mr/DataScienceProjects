@@ -37,7 +37,7 @@ df_filtered = df.loc[df['model'] == model_name]
 try:
     year_start = int(df_filtered['year'].min())
     year = st.number_input(label="Год выпуска: ",
-                           min_value=year_start,
+                           min_value=year_start-5,
                            max_value=datetime.now().year,
                            placeholder="Укажите год выпуска"
                           )
