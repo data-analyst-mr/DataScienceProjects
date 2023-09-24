@@ -18,28 +18,59 @@ st.title("Стоимость автомобиля")
 # In[13]:
 
 
-year = st.number_input("Год выпуска", min_value=1900, max_value=datetime.now().year)
+year = st.number_input(label="Год выпуска: ",
+                       min_value=1900,
+                       max_value=datetime.now().year,
+                       placeholder="Укажите год выпуска"
+                      )
 
-maker = st.selectbox(
-    label="Производитель",
-    options=("jjjjjj", "gggg"),
-    index=None,
-    placeholder="Выберите производителя",
-)
+car_age = datetime.now().year - year
 
-model = st.selectbox(
-    label="Модель",
-    options=("jjjjjj", "gggg"),
-    index=None,
-    placeholder="Выберите модель",
-)
+maker = st.selectbox(label="Производитель: ",
+                     options=("jjjjjj", "gggg"),
+                     index=None,
+                     placeholder="Выберите производителя"
+                    )
 
-trim = st.selectbox(
-    label="Модификация",
-    options=("jjjjjj", "gggg"),
-    index=None,
-    placeholder="Выберите модификацию",
-)
+model = st.selectbox(label="Модель: ",
+                     options=("jjjjjj", "gggg"),
+                     index=None,
+                     placeholder="Выберите модель",
+                    )
+
+trim = st.selectbox(label="Модификация: ",
+                    options=("jjjjjj", "gggg"),
+                    index=None,
+                    placeholder="Выберите модификацию",
+                   )
+
+body = st.selectbox(label="Тип кузова: ",
+                    options=("jjjjjj", "gggg"),
+                    index=None,
+                    placeholder="Выберите тип кузова",
+                   )
+
+transmission = st.selectbox(label="Тип КПП: ",
+                            options=("jjjjjj", "gggg"),
+                            index=None,
+                            placeholder="Выберите тип КПП",
+                           )
+
+color = st.selectbox(label="Цвет кузова: ",
+                     options=("jjjjjj", "gggg"),
+                     index=None,
+                     placeholder="Выберите цвет кузова",
+                    )
+
+odometer = st.number_input(label="Пробег (мили): ",
+                           min_value=0,
+                           max_value=500000,
+                           placeholder="Укажите пробег"
+                          )
+
+
+condition = st.radio(label="Состояние автомобиля: ",
+                     options=(1, 2, 3, 4, 5))
 
 
 # In[15]:
