@@ -33,7 +33,7 @@ model_name = st.selectbox(label="Модель: ",
                     )
 
 df = df.loc[df['model'] == model_name]
-year_start = df['year'].min()
+year_start = int(df['year'].min())
 
 
 year = st.number_input(label="Год выпуска: ",
