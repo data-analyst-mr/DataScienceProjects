@@ -27,8 +27,8 @@ year = st.number_input(label="Год выпуска: ",
 car_age = datetime.now().year - year
 
 
-today = datetime.datetime.today()
-week = today.isocalendar()[1]
+# today = datetime.datetime.today()
+# week = today.isocalendar()[1]
 
 maker = st.selectbox(label="Производитель: ",
                      options=("jjjjjj", "gggg"),
