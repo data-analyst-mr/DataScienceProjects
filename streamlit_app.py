@@ -35,14 +35,14 @@ model_name = st.selectbox(label="Модель: ",
 df = df.loc[df['model'] == model_name]
 year_start = int(df['year'].min())
 
-try:
-    year = st.number_input(label="Год выпуска: ",
-                           min_value=year_start,
-                           max_value=datetime.now().year,
-                           placeholder="Укажите год выпуска"
-                          )
-except:
-    pass
+# try:
+#     year = st.number_input(label="Год выпуска: ",
+#                            min_value=year_start,
+#                            max_value=datetime.now().year,
+#                            placeholder="Укажите год выпуска"
+#                           )
+# except:
+#     pass
 
 car_age = datetime.now().year - year
 
