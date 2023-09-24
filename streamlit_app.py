@@ -49,7 +49,7 @@ try:
 
 
     trim_name = st.selectbox(label="Модификация: ",
-                    options=(tuple(df['trim'].unique()),
+                    options=tuple(df['trim'].unique(),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
