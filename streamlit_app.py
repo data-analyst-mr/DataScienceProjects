@@ -32,8 +32,10 @@ model = st.selectbox(label="Модель: ",
                      placeholder="Выберите модель",
                     )
 
+df = df.loc[df['model'] == model]
+
 year = st.number_input(label="Год выпуска: ",
-                       min_value=1900,
+                       min_value=df['year'].min(),
                        max_value=datetime.now().year,
                        placeholder="Укажите год выпуска"
                       )
