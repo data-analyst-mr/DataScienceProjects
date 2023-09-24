@@ -6,18 +6,19 @@
 
 import streamlit as st
 import pandas as pd
+from datetime import datetime
 
 
 # In[12]:
 
 
-st.title("A Simple Streamlit Web App")
+st.title("Стоимость автомобиля")
 
 
 # In[13]:
 
 
-name = st.text_input("Enter your name", "")
+name = st.number_input("Год выпуска", min_value=1900, max_value=datetime.now().year)
 
 
 # In[14]:
