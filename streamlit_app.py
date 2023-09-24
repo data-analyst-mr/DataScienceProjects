@@ -8,6 +8,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
+df = pd.read_csv('D:/ds/Jupiter/Project_data_sciense/Мастерская-1/preprocessed_dataset.csv')
 
 # In[12]:
 
@@ -16,19 +17,6 @@ st.title("Стоимость автомобиля")
 
 
 # In[13]:
-
-
-year = st.number_input(label="Год выпуска: ",
-                       min_value=1900,
-                       max_value=datetime.now().year,
-                       placeholder="Укажите год выпуска"
-                      )
-
-car_age = datetime.now().year - year
-
-
-today = datetime.today()
-week = today.isocalendar()[1]
 
 maker = st.selectbox(label="Производитель: ",
                      options=("jjjjjj", "gggg"),
@@ -41,6 +29,18 @@ model = st.selectbox(label="Модель: ",
                      index=None,
                      placeholder="Выберите модель",
                     )
+
+year = st.number_input(label="Год выпуска: ",
+                       min_value=1900,
+                       max_value=datetime.now().year,
+                       placeholder="Укажите год выпуска"
+                      )
+
+car_age = datetime.now().year - year
+
+
+today = datetime.today()
+week = today.isocalendar()[1]
 
 trim = st.selectbox(label="Модификация: ",
                     options=("jjjjjj", "gggg"),
@@ -79,12 +79,6 @@ condition = st.radio(label="Состояние автомобиля: ",
 if condition == 1:
     interior = st.selectbox(label="Цвет интерьера: ",
                         options=("jjjjjj", "gggg"),
-                        index=None,
-                        placeholder="Выберите цвет интерьера"
-                       )
-else:
-    interior = st.selectbox(label="Цвет интерьера: ",
-                        options=("hhh", "mmm"),
                         index=None,
                         placeholder="Выберите цвет интерьера"
                        )
