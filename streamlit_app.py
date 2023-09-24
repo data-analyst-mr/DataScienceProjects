@@ -19,7 +19,7 @@ st.title("Стоимость автомобиля")
 # In[13]: 
 
 maker = st.selectbox(label="Производитель: ",
-                     options=tuple(df['make'].unique()),
+                     options=tuple(sorted(df['make'].unique())),
                      index=None,
                      placeholder="Выберите производителя"
                     )
@@ -27,7 +27,7 @@ maker = st.selectbox(label="Производитель: ",
 df = df.loc[df['make'] == maker]
 
 model_name = st.selectbox(label="Модель: ",
-                     options=tuple(df['model'].unique()),
+                     options=tuple(sorted(df['model'].unique())),
                      index=None,
                      placeholder="Выберите модель",
                     )
@@ -48,27 +48,27 @@ try:
     week = today.isocalendar()[1]
 
     trim_name = st.selectbox(label="Модификация: ",
-                    options=tuple(df_filtered['trim'].unique()),
+                    options=tuple(sorted(df['trim'].unique())),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
 
     df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
     body_name = st.selectbox(label="Тип кузова: ",
-                    options=tuple(df_filtered['body'].unique()),
+                    options=tuple(sorted(df['body'].unique())),
                     index=None,
                     placeholder="Выберите тип кузова",
                    )
 
     df_filtered = df_filtered.loc[df_filtered['body'] == body_name]
     transmission_name = st.selectbox(label="Тип КПП: ",
-                            options=tuple(df_filtered['transmission'].unique()),
+                            options=tuple(sorted(df['transmission'].unique())),
                             index=None,
                             placeholder="Выберите тип КПП",
                            )
     
     color_name = st.selectbox(label="Цвет кузова: ",
-                     options=tuple(df_filtered['color'].unique()),
+                     options=tuple(sorted(df['color'].unique())),
                      index=None,
                      placeholder="Выберите цвет кузова",
                     )
@@ -85,13 +85,13 @@ try:
                      options=(1, 2, 3, 4, 5))
 
     interior_name = st.selectbox(label="Цвет интерьера: ",
-                            options=tuple(df_filtered['interior'].unique()),
+                            options=tuple(sorted(df['interior'].unique())),
                             index=None,
                             placeholder="Выберите цвет интерьера"
                            )
 
-    state = st.selectbox(label="Регион: ",
-                     options=("jjjjjj", "gggg"),
+    state_name = st.selectbox(label="Регион: ",
+                     options=tuple(sorted(df['state'].unique())),
                      index=None,
                      placeholder="Выберите регион",
                     )
