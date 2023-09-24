@@ -23,10 +23,23 @@ year = st.number_input("Год выпуска", min_value=1900, max_value=dateti
 maker = st.selectbox(
     label="Производитель",
     options=("jjjjjj", "gggg"),
-    index="no aviable",
+    index=None,
     placeholder="Выберите производителя",
 )
 
+model = st.selectbox(
+    label="Модель",
+    options=("jjjjjj", "gggg"),
+    index=None,
+    placeholder="Выберите модель",
+)
+
+trim = st.selectbox(
+    label="Модификация",
+    options=("jjjjjj", "gggg"),
+    index=None,
+    placeholder="Выберите модификацию",
+)
 
 
 # In[15]:
