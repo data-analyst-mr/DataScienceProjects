@@ -26,13 +26,13 @@ maker = st.selectbox(label="Производитель: ",
 
 df = df.loc[df['make'] == maker]
 
-model = st.selectbox(label="Модель: ",
+model_name = st.selectbox(label="Модель: ",
                      options=tuple(df['model'].unique()),
                      index=None,
                      placeholder="Выберите модель",
                     )
 
-df = df.loc[df['model'] == model]
+df = df.loc[df['model'] == model_name]
 
 year = st.number_input(label="Год выпуска: ",
                        min_value=df['year'].min(),
