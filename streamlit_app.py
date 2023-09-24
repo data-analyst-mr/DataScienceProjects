@@ -40,62 +40,61 @@ try:
                            max_value=datetime.now().year,
                            placeholder="Укажите год выпуска"
                           )
-except:
-    pass
 
-car_age = datetime.now().year - year
+    car_age = datetime.now().year - year
 
 
-today = datetime.today()
-week = today.isocalendar()[1]
+    today = datetime.today()
+    week = today.isocalendar()[1]
 
-trim = st.selectbox(label="Модификация: ",
+    trim = st.selectbox(label="Модификация: ",
                     options=("jjjjjj", "gggg"),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
 
-body = st.selectbox(label="Тип кузова: ",
+    body = st.selectbox(label="Тип кузова: ",
                     options=("jjjjjj", "gggg"),
                     index=None,
                     placeholder="Выберите тип кузова",
                    )
 
-transmission = st.selectbox(label="Тип КПП: ",
+    transmission = st.selectbox(label="Тип КПП: ",
                             options=("jjjjjj", "gggg"),
                             index=None,
                             placeholder="Выберите тип КПП",
                            )
 
-color = st.selectbox(label="Цвет кузова: ",
+    color = st.selectbox(label="Цвет кузова: ",
                      options=("jjjjjj", "gggg"),
                      index=None,
                      placeholder="Выберите цвет кузова",
                     )
 
-odometer = st.number_input(label="Пробег (мили): ",
+    odometer = st.number_input(label="Пробег (мили): ",
                            min_value=0,
                            max_value=500000,
                            placeholder="Укажите пробег"
                           )
 
 
-condition = st.radio(label="Состояние автомобиля: ",
+    condition = st.radio(label="Состояние автомобиля: ",
                      options=(1, 2, 3, 4, 5))
 
-if condition == 1:
-    interior = st.selectbox(label="Цвет интерьера: ",
+    if condition == 1:
+        interior = st.selectbox(label="Цвет интерьера: ",
                         options=("jjjjjj", "gggg"),
                         index=None,
                         placeholder="Выберите цвет интерьера"
                        )
 
-state = st.selectbox(label="Регион: ",
+    state = st.selectbox(label="Регион: ",
                      options=("jjjjjj", "gggg"),
                      index=None,
                      placeholder="Выберите регион",
                     )
-
+except:
+    pass
 
 # In[15]:
 
