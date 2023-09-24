@@ -8,7 +8,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-df = pd.read_csv('D:/ds/Jupiter/Project_data_sciense/Мастерская-1/preprocessed_dataset.csv')
+df = pd.read_csv('preprocessed_dataset.csv')
 
 # In[12]:
 
