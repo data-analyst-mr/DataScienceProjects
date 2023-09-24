@@ -32,7 +32,7 @@ model_name = st.selectbox(label="Модель: ",
                      placeholder="Выберите модель",
                     )
 
-# df = df.loc[df['model'] == model_name]
+df = df.loc[df['model'] == model_name]
 year_start = int(df['year'].min())
 
 
