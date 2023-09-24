@@ -47,8 +47,9 @@ try:
     today = datetime.today()
     week = today.isocalendar()[1]
 
-    trim = st.selectbox(label="Модификация: ",
-                    options=("jjjjjj", "gggg"),
+
+    trim_name = st.selectbox(label="Модификация: ",
+                    options=(tuple(df['trim'].unique()),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
