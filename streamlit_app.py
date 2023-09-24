@@ -32,9 +32,9 @@ model_name = st.selectbox(label="Модель: ",
                      placeholder="Выберите модель",
                     )
 
-df = df.loc[df['model'] == model_name]
+df_filtered = df.loc[df['model'] == model_name]
 try:
-    year_start = int(df['year'].min())
+    year_start = int(df_filtered['year'].min())
     year = st.number_input(label="Год выпуска: ",
                            min_value=year_start,
                            max_value=datetime.now().year,
@@ -48,46 +48,47 @@ try:
     week = today.isocalendar()[1]
 
     trim_name = st.selectbox(label="Модификация: ",
-                    options=tuple(df['trim'].unique()),
+                    options=tuple(df_filtered['trim'].unique()),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
 
-    df = df.loc[df['trim'] == trim_name]
+    df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
     body_name = st.selectbox(label="Тип кузова: ",
-                    options=tuple(df['body'].unique()),
+                    options=tuple(df_filtered['body'].unique()),
                     index=None,
                     placeholder="Выберите тип кузова",
                    )
 
-    transmission = st.selectbox(label="Тип КПП: ",
-                            options=("jjjjjj", "gggg"),
+    df_filtered = df_filtered.loc[df_filtered['body'] == body_name]
+    transmission_name = st.selectbox(label="Тип КПП: ",
+                            options=tuple(df_filtered['transmission'].unique()),
                             index=None,
                             placeholder="Выберите тип КПП",
                            )
-
-    color = st.selectbox(label="Цвет кузова: ",
-                     options=("jjjjjj", "gggg"),
+    
+    color_name = st.selectbox(label="Цвет кузова: ",
+                     options=tuple(df_filtered['color'].unique()),
                      index=None,
                      placeholder="Выберите цвет кузова",
                     )
+    
 
-    odometer = st.number_input(label="Пробег (мили): ",
+    odometer_name = st.number_input(label="Пробег (мили): ",
                            min_value=0,
-                           max_value=500000,
+                           max_value=1500000,
                            placeholder="Укажите пробег"
                           )
 
 
-    condition = st.radio(label="Состояние автомобиля: ",
+    condition_name = st.radio(label="Состояние автомобиля: ",
                      options=(1, 2, 3, 4, 5))
 
-    if condition == 1:
-        interior = st.selectbox(label="Цвет интерьера: ",
-                        options=("jjjjjj", "gggg"),
-                        index=None,
-                        placeholder="Выберите цвет интерьера"
-                       )
+    interior_name = st.selectbox(label="Цвет интерьера: ",
+                            options=tuple(df_filtered['interior'].unique()),
+                            index=None,
+                            placeholder="Выберите цвет интерьера"
+                           )
 
     state = st.selectbox(label="Регион: ",
                      options=("jjjjjj", "gggg"),
