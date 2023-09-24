@@ -26,6 +26,8 @@ year = st.number_input(label="Год выпуска: ",
 
 car_age = datetime.now().year - year
 
+week = datetime.now().week
+
 maker = st.selectbox(label="Производитель: ",
                      options=("jjjjjj", "gggg"),
                      index=None,
@@ -71,6 +73,18 @@ odometer = st.number_input(label="Пробег (мили): ",
 
 condition = st.radio(label="Состояние автомобиля: ",
                      options=(1, 2, 3, 4, 5))
+
+interior = st.selectbox(label="Цвет интерьера: ",
+                        options=("jjjjjj", "gggg"),
+                        index=None,
+                        placeholder="Выберите цвет интерьера"
+                       )
+
+state = st.selectbox(label="Регион: ",
+                     options=("jjjjjj", "gggg"),
+                     index=None,
+                     placeholder="Выберите регион",
+                    )
 
 
 # In[15]:
