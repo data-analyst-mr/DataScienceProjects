@@ -18,8 +18,9 @@ st.title("Стоимость автомобиля")
 # In[13]:
 
 
-name = st.number_input("Год выпуска", min_value=1900, max_value=datetime.now().year)
+year = st.number_input("Год выпуска", min_value=1900, max_value=datetime.now().year)
 
+maker = st.selectbox("Производитель", args=('jjjjjj', 'gggg'),  Placeholder="Выберите вариант")
 
 # In[14]:
 
