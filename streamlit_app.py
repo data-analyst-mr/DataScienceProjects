@@ -24,7 +24,7 @@ maker = st.selectbox(label="Производитель: ",
                      placeholder="Выберите производителя"
                     )
 
-df = df.loc[df['make'] == maker]
+# df = df.loc[df['make'] == maker]
 
 model_name = st.selectbox(label="Модель: ",
                      options=tuple(df['model'].unique()),
@@ -32,7 +32,7 @@ model_name = st.selectbox(label="Модель: ",
                      placeholder="Выберите модель",
                     )
 
-df = df.loc[df['model'] == model_name]
+# df = df.loc[df['model'] == model_name]
 year_start = int(df['year'].min())
 
 
