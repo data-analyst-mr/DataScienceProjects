@@ -24,8 +24,10 @@ maker = st.selectbox(label="Производитель: ",
                      placeholder="Выберите производителя"
                     )
 
+df = df.loc[df['make'] == maker]
+
 model = st.selectbox(label="Модель: ",
-                     options=("jjjjjj", "gggg"),
+                     options=tuple(df['model'].unique()),
                      index=None,
                      placeholder="Выберите модель",
                     )
