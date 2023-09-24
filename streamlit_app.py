@@ -16,10 +16,10 @@ df = pd.read_csv('preprocessed_dataset.csv')
 st.title("Стоимость автомобиля")
 
 
-# In[13]:
+# In[13]: 
 
 maker = st.selectbox(label="Производитель: ",
-                     options=("jjjjjj", "gggg"),
+                     options=tuple(df['make'].unique()),
                      index=None,
                      placeholder="Выберите производителя"
                     )
