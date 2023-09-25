@@ -54,7 +54,7 @@ try:
 #                     placeholder="Выберите модификацию",
 #                    )
 
-    df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
+#     df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
     body_name = st.selectbox(label="Тип кузова: ",
                     options=tuple(sorted(df['body'].unique())),
                     index=None,
