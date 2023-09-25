@@ -19,13 +19,13 @@ st.title("Стоимость автомобиля")
 # In[13]: 
 
 
-maker_name = st.selectbox(label="Производитель: ",
+maker = st.selectbox(label="Производитель: ",
                      options=tuple(sorted(df['make'].unique())),
                      index=None,
                      placeholder="Выберите производителя"
                     )
 
-df = df.loc[df['make'] == maker_name]
+df = df.loc[df['make'] == maker]
 
 model_name = st.selectbox(label="Модель: ",
                      options=tuple(sorted(df['model'].unique())),
@@ -36,7 +36,7 @@ model_name = st.selectbox(label="Модель: ",
 df_filtered = df.loc[df['model'] == model_name]
 try:
     year_start = int(df_filtered['year'].min())
-    year_name = st.number_input(label="Год выпуска: ",
+    year = st.number_input(label="Год выпуска: ",
                            min_value=year_start-5,
                            max_value=datetime.now().year,
                            placeholder="Укажите год выпуска"
@@ -46,13 +46,13 @@ try:
 
 
     today = datetime.today()
-    week_name = today.isocalendar()[1]
+    week = today.isocalendar()[1]
 
-    trim_name = st.selectbox(label="Модификация: ",
-                    options=tuple(sorted(df_filtered['trim'].unique())),
-                    index=None,
-                    placeholder="Выберите модификацию",
-                   )
+#     trim_name = st.selectbox(label="Модификация: ",
+#                     options=tuple(sorted(df['trim'].unique())),
+#                     index=None,
+#                     placeholder="Выберите модификацию",
+#                    )
 
     df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
     body_name = st.selectbox(label="Тип кузова: ",
@@ -99,14 +99,22 @@ try:
 except:
     pass
 
-# model = pickle.load(open(filename, 'rb'))
+# In[15]:
 
-# data = [{'maker': maker_name, 'model': model_name, 'year': year_name, 'car_age': car_age, 'year': year_name, 'week': week_name,
-#          'body': body_name, 'transmission': transmission_name, 'color': color_name, 'odometer': odometer_name,
-#          'condition': condition_name, 'interior': interior_name, 'state': state_name, 'trim': trim_name}] 
-# df_pred = pd.DataFrame(data)
 
-# y_pred = model.predict(df_pred)
+x = st.slider("Select an integer x", 0, 10, 1)
+y = st.slider("Select an integer y", 0, 10, 1)
 
-# st.write(y_pred)
+
+# In[16]:
+
+
+df = pd.DataFrame({"x": [x], "y": [y] , "x + y": [x + y]}, index = ["addition row"])
+st.write(df)
+
+
+# In[ ]:
+
+
+
 
