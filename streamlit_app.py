@@ -8,6 +8,7 @@ import pandas as pd
 from datetime import datetime
 import pickle
 import numpy as np
+import optuna
 
 df = pd.read_csv('preprocessed_dataset.csv')
 
