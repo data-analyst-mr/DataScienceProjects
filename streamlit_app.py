@@ -3,7 +3,7 @@
 
 # In[11]:
 
-python -m pip install -r requirments.txt
+!pip3 install -r requirements.txt
 import streamlit as st
 import pandas as pd
 from datetime import datetime
