@@ -101,6 +101,8 @@ except:
 
 # In[15]:
 
+import pickle
+
 model = pickle.load(open(filename, 'rb'))
 
 data = [{'maker': maker_name, 'model': model_name, 'year': year_name, 'car_age': car_age, 'year': year_name, 'week': week_name,
