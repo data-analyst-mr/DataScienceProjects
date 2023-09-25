@@ -102,7 +102,6 @@ except:
 # In[15]:
 
 import pickle
-import sklearn
 
 filename = 'catboost_model.pkl'
 model = pickle.load(open(filename, 'rb'))
