@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[11]:
-!pip install optuna 
+$pip install optuna 
 import streamlit as st
 import pandas as pd
 from datetime import datetime
