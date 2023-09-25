@@ -103,8 +103,8 @@ except:
 
 # In[15]:
 
-filename = 'catboost_model.pkl'
-model = pickle.load(open(filename, 'rb'))
+# filename = 'catboost_model.pkl'
+model = pickle.load(open('catboost_model.pkl','rb'))
 
 data = [{'maker': maker_name, 'model': model_name, 'year': year_name, 'car_age': car_age, 'year': year_name, 'week': week_name,
          'body': body_name, 'transmission': transmission_name, 'color': color_name, 'odometer': odometer_name,
