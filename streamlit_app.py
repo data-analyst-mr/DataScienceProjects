@@ -48,13 +48,13 @@ try:
     today = datetime.today()
     week_name = today.isocalendar()[1]
 
-#     trim_name = st.selectbox(label="Модификация: ",
-#                     options=tuple(sorted(df['trim'].unique())),
-#                     index=None,
-#                     placeholder="Выберите модификацию",
-#                    )
+    trim_name = st.selectbox(label="Модификация: ",
+                    options=tuple(sorted(df['trim'].unique())),
+                    index=None,
+                    placeholder="Выберите модификацию",
+                   )
 
-#     df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
+    df_filtered = df_filtered.loc[df_filtered['trim'] == trim_name]
     body_name = st.selectbox(label="Тип кузова: ",
                     options=tuple(sorted(df['body'].unique())),
                     index=None,
@@ -103,7 +103,7 @@ except:
 
 # data = [{'maker': maker_name, 'model': model_name, 'year': year_name, 'car_age': car_age, 'year': year_name, 'week': week_name,
 #          'body': body_name, 'transmission': transmission_name, 'color': color_name, 'odometer': odometer_name,
-#          'condition': condition_name, 'interior': interior_name, 'state': state_name}] 
+#          'condition': condition_name, 'interior': interior_name, 'state': state_name, 'trim': trim_name}] 
 # df_pred = pd.DataFrame(data)
 
 # y_pred = model.predict(df_pred)
