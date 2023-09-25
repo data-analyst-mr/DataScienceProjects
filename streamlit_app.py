@@ -49,7 +49,7 @@ try:
     week_name = today.isocalendar()[1]
 
     trim_name = st.selectbox(label="Модификация: ",
-                    options=tuple(sorted(df['trim'].unique())),
+                    options=tuple(sorted(df_filtered['trim'].unique())),
                     index=None,
                     placeholder="Выберите модификацию",
                    )
