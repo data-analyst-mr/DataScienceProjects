@@ -99,14 +99,14 @@ try:
 except:
     pass
 
-model = pickle.load(open(filename, 'rb'))
+# model = pickle.load(open(filename, 'rb'))
 
-data = [{'maker': maker_name, 'model': model_name, 'year': year_name, 'car_age': car_age, 'year': year_name, 'week': week_name,
-         'body': body_name, 'transmission': transmission_name, 'color': color_name, 'odometer': odometer_name,
-         'condition': condition_name, 'interior': interior_name, 'state': state_name}] 
-df_pred = pd.DataFrame(data)
+# data = [{'maker': maker_name, 'model': model_name, 'year': year_name, 'car_age': car_age, 'year': year_name, 'week': week_name,
+#          'body': body_name, 'transmission': transmission_name, 'color': color_name, 'odometer': odometer_name,
+#          'condition': condition_name, 'interior': interior_name, 'state': state_name}] 
+# df_pred = pd.DataFrame(data)
 
-y_pred = model.predict(df_pred)
+# y_pred = model.predict(df_pred)
 
-st.write(y_pred)
+# st.write(y_pred)
 
