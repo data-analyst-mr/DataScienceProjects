@@ -7,6 +7,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+import pickle
 
 df = pd.read_csv('preprocessed_dataset.csv')
 
@@ -100,8 +101,6 @@ except:
     pass
 
 # In[15]:
-
-import pickle
 
 filename = 'catboost_model.pkl'
 model = pickle.load(open(filename, 'rb'))
