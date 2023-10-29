@@ -1,4 +1,4 @@
-# Определение возраста покупателей
+# Определение стоимости автомобилей
 
 [Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/cost_cars/coast_cars.ipynb)<br/>
 
