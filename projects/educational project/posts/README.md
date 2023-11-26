@@ -1,6 +1,6 @@
 # Анализ постов на сервисе StackOverflow за 2008 год
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/posts/posts.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/posts/posts.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
