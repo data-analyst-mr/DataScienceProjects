@@ -1,6 +1,6 @@
 # Определение стоимости автомобилей
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/cost_cars/coast_cars.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/cost_cars/coast_cars.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
