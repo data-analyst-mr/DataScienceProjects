@@ -1,6 +1,6 @@
 # Стоимость жилья в Калифорнии
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/california_houses/california_houses.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/california_houses/california_houses.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
