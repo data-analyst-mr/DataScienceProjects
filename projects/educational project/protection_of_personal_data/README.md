@@ -1,6 +1,6 @@
 # Защита персональных данных клиентов
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/protection_of_personal_data/protection_of_personal_data%20.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/protection_of_personal_data/protection_of_personal_data%20.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
