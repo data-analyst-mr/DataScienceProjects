@@ -1,6 +1,6 @@
 # Прогнозирование оттока клиентов в сети отелей "Как в гостях"
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/hotel/hotel.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/hotel/hotel.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
