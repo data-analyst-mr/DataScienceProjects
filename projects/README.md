@@ -1,6 +1,6 @@
 # Репозиторий проектов по Data Science
 
-[Data Sciense Plus — Яндекс.Практикум](https://practicum.yandex.ru/data-scientist-plus/)
+[Data Sciense Plus — Яндекс.Практикум](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/README.md)
 
 В данном репозитории размещены проекты, выполненные в ходе прохождения курса Яндекс.Практикума.
 
