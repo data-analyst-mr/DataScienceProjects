@@ -1,6 +1,6 @@
 # Модель подбора оптимального тарифа
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/mobile_tariff/mobil_tarif.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/mobile_tariff/mobil_tarif.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
