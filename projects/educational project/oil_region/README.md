@@ -1,6 +1,6 @@
 # Выбор локации для скважины
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/oil_region/oil_region.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/oil_region/oil_region.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
