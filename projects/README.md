@@ -1,13 +1,11 @@
 # Репозиторий проектов по Data Science
 
-[Data Sciense Plus — Яндекс.Практикум](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/README.md)
-
 В данном репозитории размещены проекты, выполненные в ходе прохождения курса Яндекс.Практикума.
 
 ## Описание проектов:
 | Номер проекта | Название и ссылка | Заказчик| Цель исследования| Стек|
 |---------------|-------------------|------|------------------|-----|
-|1             |[Определение возраста покупателей](https://github.com/data-analyst-mr/data_science_projects/tree/main/age_of_buyers) / [Ноутбук](https://github.com/data-analyst-mr/data_science_projects/blob/main/age_of_buyers/age_of_buyers.ipynb) | Cетевой супермаркет| Cоздание модели прогнозирования, способной по фотографии определить возраст клиента.| Предобработка данных,<br/>keras,<br/>numpy,<br/>pandas,<br/>python,<br/>seaborn,<br/>tensorflow.|
+|1             |[Определение возраста покупателей](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/README.md) / [Ноутбук](https://github.com/data-analyst-mr/data_science_projects/blob/main/age_of_buyers/age_of_buyers.ipynb) | Cетевой супермаркет| Cоздание модели прогнозирования, способной по фотографии определить возраст клиента.| Предобработка данных,<br/>keras,<br/>numpy,<br/>pandas,<br/>python,<br/>seaborn,<br/>tensorflow.|
 |2             |[Стоимость жилья в Калифорнии](https://github.com/data-analyst-mr/data_science_projects/tree/main/california_houses) / [Ноутбук](https://github.com/data-analyst-mr/data_science_projects/blob/main/california_houses/california_houses.ipynb)| Агенство недвижимости| Cоздание модели предсказания медианной стоимости дома в жилом массиве.| Предобработка данных,<br/>numpy,<br/>pandas,<br/>pyspark,<br/>python,<br/>scipy.|
 |3             |[Прогнозирование риска возникновения ДТП](https://github.com/data-analyst-mr/data_science_projects/tree/main/car_insurance) / [Ноутбук](https://github.com/data-analyst-mr/data_science_projects/blob/main/car_insurance/car_insurance.ipynb) | Каршеринговая компания| Создание модели оценики риска возникновения ДТП в зависимости от выбранного маршрута движения| Предобработка данных,<br/>catboost,<br/>datetime,<br/>matplotlib,<br/>numpy,<br/>optuna,<br/>pandas,<br/>python,<br/>seaborn,<br/>sklearn,<br/>sqlalchemy,<br/>timeit.|
 |4              |[Cервис по продаже автомобилей с пробегом](https://github.com/data-analyst-mr/data_science_projects/tree/main/cost_cars) / [Ноутбук](https://github.com/data-analyst-mr/data_science_projects/blob/main/cost_cars/coast_cars.ipynb)| Cервис по продаже автомобилей с пробегом| Создание модели прогнозирования рыночной стоимости автомобиля|Предобработка данных,<br/>datetime,<br/>lightgbm,<br/>numpy,<br/>pandas,<br/>python,<br/>seaborn,<br/>sklearn,<br/>timeit.|
