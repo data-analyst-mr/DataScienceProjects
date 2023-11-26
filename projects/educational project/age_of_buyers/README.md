@@ -1,6 +1,6 @@
 # Определение возраста покупателей
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/age_of_buyers/age_of_buyers.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/age_of_buyers.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
