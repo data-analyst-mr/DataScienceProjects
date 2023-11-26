@@ -1,6 +1,6 @@
 # Прогнозирование заказов такси
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/taxi/taxi.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/taxi/taxi.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
