@@ -1,6 +1,6 @@
 # Телеком. Отток клиентов.
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/telekom/telekom.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/telekom/telekom.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
