@@ -16,8 +16,8 @@
 ## Учебные проекты курса Яндекс.Практикум.
 
 ## Описание проектов:
-| Номер проекта | Название и ссылка | Заказчик| Цель исследования| Стек|
-|---------------|-------------------|------|------------------|-----|
+| Номер проекта | Название и ссылка | Заказчик| Цель исследования| Вывод| Стек| Статус|
+|---------------|-------------------|------|------------------|-----|-----|-----|
 |1             |[Определение возраста покупателей](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/age_of_buyers) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/age_of_buyers.ipynb) | Cетевой супермаркет| Cоздание модели прогнозирования, способной по фотографии определить возраст клиента.| | Предобработка данных,<br/>keras,<br/>numpy,<br/>pandas,<br/>python,<br/>seaborn,<br/>tensorflow.| Завершен|
 |2             |[Стоимость жилья в Калифорнии](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/california_houses) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/california_houses/california_houses.ipynb)| Агенство недвижимости| Cоздание модели предсказания медианной стоимости дома в жилом массиве.| | Предобработка данных,<br/>numpy,<br/>pandas,<br/>pyspark,<br/>python,<br/>scipy.| Завершен|
 |3             |[Прогнозирование риска возникновения ДТП](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/car_insurance) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/car_insurance/car_insurance.ipynb) | Каршеринговая компания| Создание модели оценики риска возникновения ДТП в зависимости от выбранного маршрута движения| | Предобработка данных,<br/>catboost,<br/>datetime,<br/>matplotlib,<br/>numpy,<br/>optuna,<br/>pandas,<br/>python,<br/>seaborn,<br/>sklearn,<br/>sqlalchemy,<br/>timeit.| Завершен|
