@@ -1,8 +1,8 @@
 # Учебные проекты курса Яндекс.Практикум.
 
 ## Описание проектов:
-| Номер проекта | Название и ссылка | Заказчик| Цель исследования| Стек| Статус|
-|---------------|-------------------|------|------------------|-----|-----|
+| Номер проекта | Название и ссылка | Сфера деятельности| Заказчик| Цель исследования| Стек| Статус|
+|---------------|-------------------|------|------|------------------|-----|-----|
 |1             |[Определение возраста покупателей](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/age_of_buyers) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/age_of_buyers.ipynb) | Компьютерное зрение	Бизнес,<br/>Оффлайн| Cетевой супермаркет| Cоздание модели прогнозирования, способной по фотографии определить возраст клиента.| keras,<br/>numpy,<br/>pandas,<br/>python,<br/>seaborn,<br/>tensorflow.| Завершен|
 |2             |[Стоимость жилья в Калифорнии](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/california_houses) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/california_houses/california_houses.ipynb)| Интернет-сервисы,<br/>Оффлайн,<br/>Площадки объявлений| Агенство недвижимости| Cоздание модели предсказания медианной стоимости дома в жилом массиве.| numpy,<br/>pandas,<br/>pyspark,<br/>python,<br/>scipy.| Завершен|
 |3             |[Прогнозирование риска возникновения ДТП](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/car_insurance) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/car_insurance/car_insurance.ipynb) | Бизнес,<br/>Интернет-сервисы,<br/>Оффлайн| Каршеринговая компания| Создание модели оценики риска возникновения ДТП в зависимости от выбранного маршрута движения|  catboost,<br/>datetime,<br/>matplotlib,<br/>numpy,<br/>optuna,<br/>pandas,<br/>python,<br/>seaborn,<br/>sklearn,<br/>sqlalchemy,<br/>timeit.| Завершен|
