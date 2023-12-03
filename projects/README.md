@@ -2,7 +2,7 @@
 
 ## Рабочие проекты курса Яндекс.Практикум.
 
-## Описание проектов:
+### Описание проектов:
 | Номер проекта | Название и ссылка | Заказчик| Цель исследования| Стек|
 |---------------|-------------------|------|------------------|-----|
 |1             |[Прогнозирование стоимости покупки подержанного автомобиля](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/real_projects/workshop-1) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/real_projects/workshop-1/cars_cost.ipynb) | сервис по продаже подержаных автомобилей с аукциона| разработка и обучение ML-модели прогнозирования стоимости подержанного автомобиля и определение признаков, оказывающих наибольшее влияние на цену.| Предобработка данных,<br/>catboost,<br/>dateparser,<br/>imblearn,<br/>math,<br/>matplotlib,<br/>optuna,<br/>phik,<br/>re,<br/>seaborn,<br/>swifter,<br/>sklearn,<br/>timeit.|
@@ -15,7 +15,7 @@
 
 ## Учебные проекты курса Яндекс.Практикум.
 
-## Описание проектов:
+### Описание проектов:
 | Номер проекта | Название и ссылка | Заказчик| Цель исследования| Стек|
 |---------------|-------------------|------|------------------|-----|
 |1             |[Определение возраста покупателей](https://github.com/data-analyst-mr/DataScienceProjects/tree/main/projects/educational%20project/age_of_buyers) / [Ноутбук](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/educational%20project/age_of_buyers/age_of_buyers.ipynb) | Cетевой супермаркет| Cоздание модели прогнозирования, способной по фотографии определить возраст клиента.| Предобработка данных,<br/>keras,<br/>numpy,<br/>pandas,<br/>python,<br/>seaborn,<br/>tensorflow.|
