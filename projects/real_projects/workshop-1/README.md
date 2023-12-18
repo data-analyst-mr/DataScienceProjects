@@ -1,6 +1,6 @@
 # Проект для "Викишоп" с BERT
 
-[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/data_science_projects/blob/main/wikishop/wikishop.ipynb)<br/>
+[Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/real_projects/workshop-1/cars_cost.ipynb)<br/>
 
 ## Описание проекта:
 |   |  |
