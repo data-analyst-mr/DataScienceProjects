@@ -1,4 +1,4 @@
-# Проект для "Викишоп" с BERT
+# Прогнозирование стоимости покупки подержанного автомобиля
 
 [Проект разработан в jupiter notebook.](https://github.com/data-analyst-mr/DataScienceProjects/blob/main/projects/real_projects/workshop-1/cars_cost.ipynb)<br/>
 
